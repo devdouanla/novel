@@ -1,0 +1,38 @@
+EXTRACTION DE TEXTE - FICHIER DE TEST
+
+Ce fichier sert à tester la fonctionnalité d'extraction de texte de votre application.
+
+CONTENU DU FICHIER :
+====================
+
+1. INTRODUCTION
+   - Test de l'API d'extraction
+   - Validation du fonctionnement
+   - Vérification des métadonnées
+
+2. FONCTIONNALITÉS TESTÉES
+   - Lecture de fichiers texte1
+   - Extraction du contenu
+   - Affichage des informations
+   - Gestion des erreurs
+
+3. INFORMATIONS TECHNIQUES
+   - API Next.js 13+
+   - Route handlers
+   - Gestion des fichiers système
+   - Formatage des données
+
+4. UTILISATION
+   - Cliquez sur "Extraire le texte"
+   - Le contenu sera affiché ci-dessous
+   - Les métadonnées du fichier seront visibles
+   - Vous pouvez modifier ce fichier pour tester
+
+5. NOTES
+   - Ce fichier est lu depuis /public/docs/
+   - L'API gère automatiquement l'encodage UTF-8
+   - Les erreurs sont affichées de manière claire
+   - L'interface s'adapte au thème sombre/clair
+
+FIN DU FICHIER DE TEST
+======================= 

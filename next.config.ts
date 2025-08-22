@@ -5,10 +5,18 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'res.cloudinary.com',
+       hostname: 'example.com', // 👈 ton domaine d'image externe
         port: '',
         pathname: '/**',
       },
+      {
+      protocol: 'https',
+      hostname: 'res.cloudinary.com',
+    },
+    {
+      protocol: 'https',
+      hostname: 'cdn.akknovel.com',
+    },
     ],
   },
 };

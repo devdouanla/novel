@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import  Header  from "./components/header"
+import { BookProvider } from "@/contexts/useBookContext";
+import { ChapitreProvider } from "@/contexts/useChapitreContext";
 import { ThemeContextProvider } from "./hooks/useTheme";
 import "@/app/globals.css"
 
@@ -32,7 +34,11 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
           <Header/>
-        {children}
+          <BookProvider>
+            <ChapitreProvider>
+              {children}
+            </ChapitreProvider>
+            </BookProvider>
       </body>
       </ThemeContextProvider>
     </html>

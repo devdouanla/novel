@@ -3,7 +3,6 @@
 import React, { useState } from "react";
 import Link from 'next/link'
 import CustomizedSwitches from './switch'
-import Search from './search';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 
@@ -16,10 +15,10 @@ const navLinks = [
     name: "Series",
     href: "/series"
   },
-  {
-    name: "Library",
-    href: "/library"
-  },
+  // {
+  //   name: "Library",
+  //   href: "/library"
+  // },
 ]
 
 const Header = () => {
@@ -66,7 +65,7 @@ const Header = () => {
         </nav>
 
         <div className="flex gap-4 items-center">
-          <Search />
+          {/* <Search /> */}
           <CustomizedSwitches />
         </div>
       </div>

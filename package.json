@@ -6,7 +6,12 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "d:migrate": "drizzle-kit migrate",
+    "d:generate": "drizzle-kit generate",
+    "d:push": "drizzle-kit push",
+    "drizzle:reset": "drizzle-kit reset",
+    "drizzle:status": "drizzle-kit status"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
@@ -16,8 +21,14 @@
     "@mui/icons-material": "^7.1.1",
     "@mui/material": "^7.1.1",
     "@tailwindcss/vite": "^4.1.8",
+    "date-fns": "^4.1.0",
+    "dotenv": "^17.2.1",
+    "drizzle-orm": "^0.44.4",
+    "lucide-react": "^0.540.0",
+    "mammoth": "^1.10.0",
     "next": "15.3.3",
     "next-cloudinary": "^6.16.0",
+    "pg": "^8.16.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "rizzui": "^1.0.1"
@@ -26,13 +37,16 @@
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4.1.8",
     "@types/node": "^20",
+    "@types/pg": "^8.15.5",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "autoprefixer": "^10.4.21",
+    "drizzle-kit": "^0.31.4",
     "eslint": "^9",
     "eslint-config-next": "15.3.3",
     "postcss": "^8.5.4",
     "tailwindcss": "^4.1.8",
+    "tsx": "^4.20.4",
     "typescript": "^5"
   }
 }
