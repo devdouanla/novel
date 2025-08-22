@@ -11,7 +11,9 @@
     "d:generate": "drizzle-kit generate",
     "d:push": "drizzle-kit push",
     "drizzle:reset": "drizzle-kit reset",
-    "drizzle:status": "drizzle-kit status"
+    "drizzle:status": "drizzle-kit status",
+    "d:deploy": "drizzle-kit generate && drizzle-kit push && next build"
+
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
